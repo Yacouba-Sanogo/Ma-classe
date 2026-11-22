@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: monassistantprof
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/monassistantprof}
+    username: ${POSTGRES_USER:map}
+    password: ${POSTGRES_PASSWORD:change-me}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

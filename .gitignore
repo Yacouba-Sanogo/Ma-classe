@@ -1,0 +1,16 @@
+# Java / Maven
+target/
+*.class
+# Flutter / Dart
+.dart_tool/
+build/
+.flutter-plugins*
+*.g.dart.bak
+# IDE
+.idea/
+*.iml
+.vscode/
+# Secrets / env
+.env
+*.jks
+key.properties
